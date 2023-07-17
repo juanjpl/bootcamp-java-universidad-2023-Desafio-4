@@ -1,20 +1,28 @@
 /*Estilos css*/
 
-@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+@font-face {
+    font-family:'Roboto Light' ;
+    src: url('../fonts/Roboto-Light.ttf') ;
+}
+@font-face {
+    font-family:'Coolvetica' ;
+    src: url('../fonts/coolvetica\ rg.otf') ;
+}
+
+
 
 :root {
   --primary-color: #04146c;
   --secundary-color: #0a2ff1;
 
-  --font-primary: "Mulish", sans-serif;
+  --font-roboto: 'Roboto Light';
+  --font-coolvetica: 'Coolvetica' ;
 
-  --size-28pt: 37px;
-  --size-16pt: 22px;
-  --size-14pt: 20px;
+  --size-30pt: 40px;
+  --size-90pt: 120px;
 
   --font-weight-regular: 400;
-  --font-weight-bold: 700;
-  --font-weight-black: 900;
+  --font-weight-light: 300;
 
 
   
@@ -24,4 +32,54 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body,
+main{
+    display:flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+}
+
+main{
+    width: 60vw;
+    height:max-content;
+    
+}
+
+h1{
+    color: var(--secundary-color);
+    font-size: var(--size-90pt);
+    font-weight: var(--font-weight-regular);
+    font-family: var(--font-coolvetica);
+}
+
+p{
+    color:var(--primary-color);
+    font-size: var(--size-30pt);
+    font-weight: var(--font-weight-light);
+    font-family: var(--font-roboto);
+    margin: 3rem auto;
+}
+
+#boton-azul,
+#boton-blanco{
+    background-color: var(--secundary-color);
+    font-size: var(--size-30pt);
+    font-weight: var(--font-weight-regular);
+    font-family: var(--font-roboto);
+    color:#ffffff;
+    border:3px solid var(--secundary-color);
+    padding:10px 80px;
+    width: max-content;
+    margin: 1.5rem auto;
+}
+
+#boton-blanco{
+    background-color: #ffffff;
+    color:var(--primary-color);
 }
