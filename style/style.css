@@ -1,20 +1,20 @@
 /*Estilos css*/
 
-@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
   --primary-color: #04146c;
   --secundary-color: #0a2ff1;
 
-  --font-primary: "Mulish", sans-serif;
+  --font-primary:  'Roboto', sans-serif;
 
-  --size-28pt: 37px;
-  --size-16pt: 22px;
-  --size-14pt: 20px;
+  --size-12pt: 16px;
+  --size-24pt: 32px;
+  --size-48pt: 64px;
 
+  --font-weight-light: 300;
   --font-weight-regular: 400;
   --font-weight-bold: 700;
-  --font-weight-black: 900;
   
 
 }
@@ -23,4 +23,70 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--font-primary);
+}
+
+body,
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    margin:0 auto;
+    justify-content: center;
+}
+
+main{
+    flex-direction: row;
+    width: 60vw;
+    height: max-content;
+}
+
+.contenedor-imagen,
+.contenedor-texto{
+
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.contenedor-texto{
+    width: 40%;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+
+.contenedor-texto>h1{
+    
+    font-size: var(--size-48pt);
+    color: var(--secundary-color);
+    font-weight: var(--font-weight-bold);
+    margin:2rem 0;
+}
+
+.contenedor-texto>h2{
+   font-size: var(--size-24pt);
+   font-weight: var(--font-weight-light);
+   color:var(--primary-color);
+   margin:1rem 0;
+}
+
+.contenedor-texto>img{
+width: 30%;
+margin:1rem 0;
+}
+
+.contenedor-texto>p{
+    font-size: var(--size-12pt);
+    font-weight: var(--font-weight-bold);
+    color:var(--primary-color);
+    margin:0.5rem 0;
+}
+
+.contenedor-texto>span{
+    font-weight: var(--font-weight-regular);
 }
