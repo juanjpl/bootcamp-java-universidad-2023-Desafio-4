@@ -1,19 +1,25 @@
 /*Estilos css*/
 
-@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'Coolvetica';
+    src: url('../fonts/coolvetica\ rg.otf');
+}
 
 :root {
   --primary-color: #04146c;
   --secundary-color: #0a2ff1;
+  --background-color:#eff2ff;
 
-  --font-primary: "Mulish", sans-serif;
+  --font-Roboto:'Roboto', sans-serif;
+  --font-Coolvetica:  'Coolvetica';
 
-  --size-28pt: 37px;
-  --size-16pt: 22px;
-  --size-14pt: 20px;
+  --size-18pt: 24px;
+  --size-28pt: 30px;
+  --size-90pt: 120px;
 
   --font-weight-regular: 400;
-  --font-weight-bold: 700;
   --font-weight-black: 900;
   
 
@@ -23,4 +29,73 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(209, 209, 249);
+}
+
+main,
+header{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    border: 1px solid black;
+    width: 90%;
+
+}
+
+header>h1{
+    font-family: var(--font-Coolvetica);
+    font-size: var(--size-90pt);
+    font-weight: var(--font-weight-regular);
+    color:var(--secundary-color);
+}
+
+main{
+    padding:1em;
+    justify-content: space-evenly;
+}
+.contenedor{
+  
+    background-color: var(--background-color);
+    border-radius: 10px;
+    text-align: center;
+    width: 20%;
+    padding:1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor>img{
+    width:25%;
+    margin:0 auto;
+    margin:1rem auto;
+
+}
+
+#imagen-apple{
+    width:18%;
+}
+.contenedor>h2{
+    font-family: var(--font-Roboto);
+    font-weight: var(--font-weight-black);
+    font-size: var(--size-28pt);
+    color:var(--secundary-color);
+
+}
+
+.contenedor>p{
+    font-family: var(--font-Roboto);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--size-18pt);
+    color:var(--primary-color);
+    text-align: left;
+    margin:1rem auto;
 }
