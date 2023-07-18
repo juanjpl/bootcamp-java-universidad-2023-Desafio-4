@@ -38,7 +38,7 @@ body{
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(209, 209, 249);
+
 }
 
 main,
@@ -46,7 +46,6 @@ header{
     display: flex;
     flex-direction: row;
     margin: 0 auto;
-    border: 1px solid black;
     width: 90%;
 
 }
