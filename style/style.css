@@ -1,17 +1,25 @@
 /*Estilos css*/
 
-@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
 
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family:'Coolvetica' ;
+    src: url('../fonts/coolvetica\ rg.otf') ;
+}
 :root {
   --primary-color: #04146c;
   --secundary-color: #0a2ff1;
+  --background-color:#dff2ff;
 
-  --font-primary: "Mulish", sans-serif;
+  --font-primary: 'Roboto', sans-serif;
+  --font-coolvetica: 'Coolvetica';
 
-  --size-28pt: 37px;
-  --size-16pt: 22px;
-  --size-14pt: 20px;
+  --size-18pt: 24px;
+  --size-30pt: 40px;
+  --size-90pt: 120px;
 
+  --font-weight-light: 300;
   --font-weight-regular: 400;
   --font-weight-bold: 700;
   --font-weight-black: 900;
@@ -23,4 +31,84 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body,
+main,
+header{
+  
+    border: 2px solid black;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:0 auto;
+    width:100vw;
+    height: 100vh;
+
+}
+
+main,
+header{
+    width: 90%;
+    height: max-content;
+
+
+}
+
+main{
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+main>.contenedor{
+    width: 25%;
+    background-color: var(--background-color);
+    padding:1rem;
+   
+}
+main>.contenedor>img{
+    width: 30%;
+}
+
+main>.contenedor>h2{
+    font-family: var(--font-primary);
+    font-size: var(--size-18pt);
+    font-weight: var(--font-weight-light);
+color:var(--primary-color);
+font-style: italic;
+margin: 1.5rem 0rem;
+}
+
+main>.contenedor>h3{
+    font-family: var(--font-primary);
+    font-size: var(--size-18pt);
+    font-weight: var(--font-weight-black);
+color:var(--primary-color);
+margin: 1.5rem 0rem;
+}
+
+main>.contenedor>p{
+    font-family: var(--font-primary);
+    font-size: var(--size-18pt);
+    font-weight: var(--font-weight-regular);
+
+}
+
+header>h1{
+    font-family: var(--font-coolvetica);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--size-90pt);
+    color:#0a2ff1;
+    margin-bottom: 5rem;
+}
+
+header>h2{
+    font-family: var(--font-primary);
+    font-size: var(--size-30pt);
+    font-weight: var(--font-weight-light);
+    color:var(--primary-color);
+    margin-bottom: 3rem;
+}
+
+header>h2>span{
+    font-weight: var(--font-weight-bold);
 }
