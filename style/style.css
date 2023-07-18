@@ -8,19 +8,96 @@
 
   --font-primary: "Mulish", sans-serif;
 
-  --size-28pt: 37px;
-  --size-16pt: 22px;
-  --size-14pt: 20px;
+  --size-20pt: 27px;
+  --size-22pt: 29px;
+  --size-30pt: 40px;
+  --size-60pt: 80px;
 
   --font-weight-regular: 400;
   --font-weight-bold: 700;
   --font-weight-black: 900;
-  
-
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--font-primary);
+}
+
+body,
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  width: 95%;
+  height: auto;
+  flex-direction: row;
+}
+
+.contenedor-texto,
+.contenedor-imagen {
+  width: 50%;
+  height: 100%;
+ 
+}
+
+.contenedor-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contenedor-texto > h2 {
+  font-size: var(--size-30pt);
+  font-weight: var(--font-weight-regular);
+  color: var(--secundary-color);
+}
+
+.contenedor-texto > h1 {
+  font-size: var(--size-60pt);
+  font-weight: var(--font-weight-black);
+  color: var(--secundary-color);
+  margin: 2rem auto 3rem auto;
+}
+
+.contenedor-texto > p {
+  font-size: var(--size-20pt);
+  font-weight: var(--font-weight-regular);
+  color: var(--primary-color);
+  margin-bottom: 3rem;
+}
+
+.contenedor-texto > span {
+  font-weight: var(--font-weight-bold);
+}
+
+.contenedor-texto > button {
+  font-weight: var(--font-weight-bold);
+  color: #ffffff;
+  font-size: var(--size-22pt);
+  background-color: var(--secundary-color);
+  border: none;
+  padding: 10px 80px;
+  width: 40%;
+}
+
+.contenedor-imagen {
+  background-image: url(../src/D2-E3-pattern.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+}
+#imagen-foto {
+  width: 50%;
+  height: min-content;
+  border: 5px solid #0a2ff1;
+  margin-left: 10%;
 }
