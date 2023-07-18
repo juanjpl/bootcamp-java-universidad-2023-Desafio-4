@@ -62,7 +62,7 @@ main{
 main>.contenedor{
     width: 25%;
     background-color: var(--background-color);
-    padding:1rem;
+    padding:1em;
    
 }
 main>.contenedor>img{
