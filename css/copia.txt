@@ -1,0 +1,83 @@
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width:100vw;
+  height: 400px;
+  border: 1px solid black;
+  background-image: url(../src/fondo\ \(1\).jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+
+   <div class="seccion-one">
+        <h2>¿Querés saber más sobre mi experiencia laboral?</h2>
+        <p>Colocá el mouse sobre mi fotografía</p>
+        <div class="imagen"><img src="./src/foto.png" alt="foto" /></div>
+        <div class="experiencia">
+          <h3>ELY</h3>
+          <h4>ADMINISTRATIVO COMPRAS</h4>
+          <p>
+            Tareas realizadas: ADMINISTRATIVO / OFFICE • Análisis y compra de
+            materia prima • Notas de compra. Pedidos. Presupuestos. • Control de
+            stock planificación de compras • Nexo entre la empresa y los
+            proveedores • Controles administrativos diarios.
+          </p>
+        </div>
+      </div>
+
+
+      main{
+  border: 1px solid rgb(230, 7, 7);
+  width: 100vw;
+  height: 70vh;
+margin:0 auto;
+  display: flex;
+flex-direction: row;
+
+
+}
+
+main>.seccion-one{
+position:absolute;
+  width: 33vw;
+  border: 1px solid black;
+}
+
+
+.imagen,
+.experiencia{ 
+  width: 33vw;
+  height: 65vh;
+  border: 1px solid rgb(230, 7, 7);
+}
+
+.imagen{
+  position: absolute;
+}
+
+.imagen>img
+{
+  display: flex;
+  flex-direction: column;
+  height: 65vh;
+  margin:0 ;
+  padding:0;
+  overflow: auto;
+  position: relative;
+  top:0;
+  z-index: 0;
+}
+
+
+
+
+
+.experiencia{
+  display: none;
+  width: 100%;
+  height: 65vh;
+  background-color: aquamarine;
+  position: relative;
+left:800px;
+z-index: 10;
+}

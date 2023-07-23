@@ -1,0 +1,133 @@
+/*Estilos css*/
+
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+
+:root {
+  --primary-color: #04146c;
+  --secundary-color: #0a2ff1;
+
+  --font-primary: "Mulish", sans-serif;
+
+  --size-28pt: 37px;
+  --size-16pt: 22px;
+  --size-14pt: 20px;
+
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+}
+
+* {
+  margin:0 auto;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+  height: max-content;
+  background-color: darkgray;
+  align-items: center;
+
+
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: 30vh;
+  border: 1px solid black;
+  background-image: url(../src/fondo\ \(1\).jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+
+}
+header > h1 {
+
+  border: 1px solid black;
+  margin: 0 auto;
+  background-color:#fff;
+  padding:10px 30px; 
+  font-weight:bold;
+  font-family:arial;
+  font-size:50px;
+mix-blend-mode: screen;
+
+}
+
+
+
+
+/*=============================*/
+
+
+.container{
+  display: flex;
+  border: 1px solid black;
+
+
+}
+.card{
+  height: 500px;
+  box-shadow: 5px 5px 20px black;
+  overflow: hidden;
+}
+
+.card>img{
+height: 500px;
+width: 350px;
+border-radius: 3px;
+transition: ease-in-out .5s;
+}
+
+.intro{
+  height:70px;
+  width: 350px;
+  padding: 6px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom:200px;
+  background: rgb(27,27,27,.5);
+  color:white;
+  transition: ease-in-out .5s;
+
+
+}
+
+.intro>h1{
+  margin:10px;
+  font-size: 40px;
+}
+
+.intro>p{
+margin: 20px;
+visibility: hidden;
+opacity: 0;
+transition: ease-in-out .5s;
+}
+
+.card:hover{
+  cursor: pointer;
+}
+.card:hover img{
+  transform: scale(1.1) rotate(-3deg);
+}
+
+
+.intro:hover{
+  height: 300px;
+  bottom:200px;
+  background: black;
+}
+
+.intro:hover p{
+  opacity:1;
+  visibility: visible;
+}
