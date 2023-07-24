@@ -64,51 +64,65 @@ mix-blend-mode: screen;
 /*=============================*/
 main{
 display: flex;
-flex-direction: column;
-  background-color: #0a2ff1;
+flex-direction:row;
   width: 100vw;
   height: max-content;
 }
 
 .container>h1,
 .container>h2{
-  color:#ffffff;
+  color:black;
   margin:0;
 
+}
+
+.container>h1{
+
+  font-family: var(--font-Roboto);
+  font-size: var(--size-2em);
+  font-weight: var(--font-weight-regular);
+margin:20px;
+}
+
+.container>h2{
+ 
+  font-family: var(--font-Roboto);
+  font-size: 20px;
+  font-weight: var(--font-weight-regular);
+  margin:20px;
+  
 }
 
 .container{
   display: flex;
   flex-direction: column;
   left:100px;
-  height: 70vh;
+  height: max-content;
   margin:0;
- width:20vw;
-  border: 1px solid black;
+ width:30vw;
+
 
 
 
 }
 .card{
-  height: 70vh;
+  height: max-content;
   box-shadow: 5px 5px 20px black;
   overflow: hidden;
 }
 
 .card>img{
-height: 70vh;
-width: 20vw;
+
+width: 30vw;
 border-radius: 3px;
 transition: ease-in-out .5s;
 }
 
 .intro{
-  height:69.9vh;
-  width: 20vw;
-  padding: 20px;
-  box-sizing: border-box;
+height: 100%;
+  width: 30vw;
   position: absolute;
-  left:-400px;
+  left:-600px;
   background: rgb(27,27,27,.5);
   color:white;
   transition: ease-in-out .5s;
@@ -119,6 +133,7 @@ transition: ease-in-out .5s;
 .intro>h1{
   margin:10px;
   font-size: 40px;
+
 }
 
 .intro>p{
